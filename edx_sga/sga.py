@@ -57,7 +57,7 @@ class StaffGradedAssignmentXBlock(XBlock):
     icon_class = 'problem'
 
     display_name = String(
-        display_name=_("Problem title")
+        display_name=_("Problem title"),
         default=_('Staff Graded Assignment'), scope=Scope.settings,
         help=_("This name appears in the horizontal navigation at the top of "
               "the page.")

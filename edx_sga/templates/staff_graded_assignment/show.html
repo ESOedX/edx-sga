@@ -4,7 +4,7 @@
      data-staff="{{ is_course_staff }}">
   <script type="text/template" id="sga-tmpl">
     <% if (uploaded) { %>
-      <p><b>{% trans "File uploaded" %}</b>
+      <p><b>{% trans "File uploaded" %}: </b>
         <a href="<%= downloadUrl %>"><%= uploaded.filename %></a></p>
     <% } else { %>
       <p>{% trans "No file has been uploaded." %}</p>

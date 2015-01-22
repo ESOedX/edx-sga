@@ -62,7 +62,7 @@ msgstr "Sua nota é"
 
 #: edx_sga/templates/staff_graded_assignment/show.html#15
 msgid "Instructor comment"
-msgstr "Comentário do instrutor"
+msgstr "Comentário do professor"
 
 #: edx_sga/templates/staff_graded_assignment/show.html#18
 msgid "Annotated file from instructor"
@@ -105,7 +105,7 @@ msgid ""
 "This name appears in the horizontal navigation at the top of "
 "the page."
 msgstr ""
-"Este nome aparece na barra de navegação no topo "
+"Este nome aparecerá na barra de navegação no topo "
 "da página."
 
 #: edx_sga/templates/staff_graded_assignment/sga.py
