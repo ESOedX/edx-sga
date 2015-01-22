@@ -68,6 +68,22 @@ msgstr "Comentário do instrutor"
 msgid "Annotated file from instructor"
 msgstr "Anotações do professor"
 
+#: edx_sga/templates/staff_graded_assignment/show.html#34
+msgid "Select a file"
+msgstr "Selecione um arquivo"
+
+#: edx_sga/templates/staff_graded_assignment/show.html#50
+msgid "Filename"
+msgstr "Nome do arquivo"
+
+#: edx_sga/templates/staff_graded_assignment/show.html#53
+msgid "Uploaded"
+msgstr "Enviado em"
+
+#: edx_sga/templates/staff_graded_assignment/show.html#53
+msgid "Annotated"
+msgstr "Anotações"
+
 #: edx_sga/templates/staff_graded_assignment/show.html#55
 msgid "Instructor's comments"
 msgstr "Comentários do professor"
@@ -81,11 +97,15 @@ msgid "Staff Graded Assignment"
 msgstr ""
 
 #: edx_sga/templates/staff_graded_assignment/sga.py
+msgid "Problem title"
+msgstr "Título da questão"
+
+#: edx_sga/templates/staff_graded_assignment/sga.py
 msgid ""
 "This name appears in the horizontal navigation at the top of "
 "the page."
 msgstr ""
-"Este nome aparece na barra de navegação no topo"
+"Este nome aparece na barra de navegação no topo "
 "da página."
 
 #: edx_sga/templates/staff_graded_assignment/sga.py
@@ -98,8 +118,8 @@ msgid ""
 "If the value is not set, the problem is worth the sum of the "
 "option point values."
 msgstr ""
-"Define o número de pontos que cada questão valerá"
-"Se o valor estiver em branco, a quetão valerá a soma dos"
+"Define o número de pontos que cada questão valerá. "
+"Se o valor estiver em branco, a quetão valerá a soma dos "
 "pontos."
 
 #: edx_sga/templates/staff_graded_assignment/sga.py
