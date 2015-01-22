@@ -61,19 +61,17 @@ class StaffGradedAssignmentXBlock(XBlock):
              "the page."
     )
 
-    weight = Float(
+    weight = Integer(
         display_name="Problem Weight",
         help=("Defines the number of points each problem is worth. "
               "If the value is not set, the problem is worth the sum of the "
               "option point values."),
-        values={"min": 0, "step": .1},
         scope=Scope.settings
     )
 
-    points = Float(
+    points = Integer(
         display_name="Maximum score",
         help=("Maximum grade score given to assignment by staff."),
-        values={"min": 0, "step": .1},
         default=100,
         scope=Scope.settings
     )
@@ -465,7 +463,7 @@ class StaffGradedAssignmentXBlock(XBlock):
 
 
 def _file_storage_path(url, sha1, filename):
-    path = url[6:] + '/' + sha1
+    path = url[9:] + '/' + sha1
     path += os.path.splitext(filename)[1]
     return path
 
