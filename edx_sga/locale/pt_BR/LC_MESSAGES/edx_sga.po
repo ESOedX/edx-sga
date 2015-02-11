@@ -93,10 +93,6 @@ msgid "Upload annotated file"
 msgstr "Enviar anotações"
 
 #: edx_sga/templates/staff_graded_assignment/sga.py
-msgid "Staff Graded Assignment"
-msgstr ""
-
-#: edx_sga/templates/staff_graded_assignment/sga.py
 msgid "Problem title"
 msgstr "Título da questão"
 
