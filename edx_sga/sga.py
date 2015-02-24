@@ -422,6 +422,9 @@ class StaffGradedAssignmentXBlock(XBlock):
         else:
             state['staff_score'] = score
         state['comment'] = request.params.get('comment', '')
+        # set score in StudentModule
+        module.grade = score
+        module.max_grade = self.max_score()
         module.state = json.dumps(state)
         module.save()
 
@@ -440,6 +443,9 @@ class StaffGradedAssignmentXBlock(XBlock):
         state['annotated_filename'] = None
         state['annotated_mimetype'] = None
         state['annotated_timestamp'] = None
+        # clean score in StudentModule
+        module.grade = None
+        module.max_grade = None
         module.state = json.dumps(state)
         module.save()
         return Response(json_body=self.staff_grading_data())
